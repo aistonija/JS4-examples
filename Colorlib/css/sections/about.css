@@ -1,0 +1,178 @@
+.section-text {
+  text-align: center;
+}
+
+.section__title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--dark);
+  margin: 3rem 0;
+}
+
+.section__description {
+  color: var(--grey-text);
+  line-height: 1.7;
+}
+
+/* PROGRESS BARS */
+
+.about-progress {
+  padding: 50px 0;
+}
+
+.progress-block {
+  margin: 50px 0;
+}
+
+.progress-bar {
+  height: 2px;
+  width: 100%;
+  background-color: rgba(140, 149, 151, 0.1);
+  margin-bottom: 30px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.progress--tomato {
+  width: 60%;
+  background-color: var(--tomato);
+  height: 4px;
+}
+
+.progress--yellow {
+  width: 82%;
+  background-color: var(--yellow);
+  height: 4px;
+}
+
+.progress--violet {
+  width: 86%;
+  background-color: var(--violet);
+  height: 4px;
+}
+
+.badge {
+  border-radius: 5px;
+  color: var(--light);
+  text-align: center;
+  padding: 5px 16px;
+  position: absolute;
+  bottom: 20px;
+}
+
+.fa-caret-down {
+  position: absolute;
+  bottom: 10px;
+}
+
+.tomato--caret > .fa-caret-down {
+  left: 60%;
+  color: var(--tomato);
+}
+
+.yellow--caret > .fa-caret-down {
+  left: 82%;
+  color: var(--yellow);
+}
+
+.violet--caret > .fa-caret-down {
+  left: 86%;
+  color: var(--violet);
+}
+
+/* .badge::after {
+  content: "\f0d7";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  padding-left: 10px;
+} */
+
+.badge--tomato {
+  left: 55%;
+}
+
+.badge--yellow {
+  left: 76%;
+}
+
+.badge--violet {
+  left: 80%;
+}
+
+.circle {
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+}
+
+.circle--yellow,
+.badge--yellow {
+  background-color: var(--yellow);
+}
+
+.circle--tomato,
+.badge--tomato {
+  background-color: var(--tomato);
+}
+
+.circle--violet,
+.badge--violet {
+  background-color: var(--violet);
+}
+
+.title--tomato,
+.icon--tomato {
+  color: var(--tomato);
+}
+
+.title--yellow,
+.icon--yellow {
+  color: var(--yellow);
+}
+
+.title--violet,
+.icon--violet {
+  color: var(--violet);
+}
+
+.border--tomato {
+  border: 1px solid var(--tomato);
+}
+.border--yellow {
+  border: 1px solid var(--yellow);
+}
+.border--violet {
+  border: 1px solid var(--violet);
+}
+
+.progress__title::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 600;
+  margin-right: 10px;
+  vertical-align: baseline;
+}
+
+.title--typography::before {
+  content: "\f031";
+}
+
+.title--design::before {
+  content: "\f303";
+}
+
+.title--dev::before {
+  content: "\f121";
+}
+
+@media screen and (min-width: 769px) {
+  .about-progress {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .progress-block {
+    width: 30%;
+  }
+}
